@@ -2,9 +2,117 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
   </head>
-  <body></body>
+  <body class="page">
+    <header class="header">
+      <nav>
+        <ul class="header__menu">
+          <li href="#home" class="menu-link_no_active">главная</li>
+          <li href="#viev_lots" class="menu-link">посмотреть лоты</li>
+          <li href="#auctoin" class="menu-link">об аукционе</li>
+        </ul>
+      </nav>
+      <logo class="header__logo">
+        <img class="logo"
+        src="./images/logo-black.svg"
+        alt="Логотип оно тебе надо"/>
+      </logo>
+      <address>
+        <a href="tel:+99995555555">+9 999 555 5555</a><br/>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br/>
+        <p>наб. Принсенграхт 263-265,<br/>Амстердам</p>
+      </adress>
+    </header>
+    <cover class ="cover">
+      <img src="./images/cover.jpg" alt="лотосы" class="cover_image">
+      <h1>
+        <span class="first_up">он</span><span class="first_up_letter">о</span><br/>
+        <span class="first_center">теб</span><span class="first_center_letter">е</span><br/>
+        <span class="first_down">н</span><span class="first_down_letter">ад</span><span class="first_down__letter">о</span><br/>
+        <span class="cover_down">аукцион вещей, в которые никто не верил</span>
+        <button class="cover_button">сделать ставку</button>
+      </h1>
+    </cover>
+    
+    <!-- <section class="lots" id="viev_lots">
+      <h2 class="lots__title">лоты</h2>
+      <ul class="lots__list">
+        <li class="lots__item">
+          <article class="lot">
+            <img src="./images/card-lot-01.jpg" alt="фильм" class="lots_film">
+            <h3 class="lots_title_film">Фильм режиссёра, который бросил киношколу</h3>
+            <p class="lots_text_film">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>      
+          </article>
+          <article class="lot">
+            <img src="./images/card-lot-02.jpg" alt="книга" class="lots_books">
+            <h3 class="lots_title_books">Книга, где описан один скучный день из жизни рекламного агента</h3>
+            <p class="lots_text_books">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>      
+          </article>
+          <article class="lot">
+            <img src="./images/card-lot-03.jpg" alt="картинка" class="lots_pictures">
+            <h3 class="lots_title_pictures">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+            <p class="lots_text_pictures">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков… Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>      
+          </article>
+        </li>
+      </ul>
+      <a href="#see_more" class="see_more">посмотреть больше</a>
+    </section>
+      <div class="about">
+      <section class="section about" id="auctoin">
+        <img class="logo_white"
+        src="./images/logo-white.svg"
+        alt="белый логотип оно тебе надо">
+        <h4 class="about__title">Об&nbsp;аукционе</h4>
+        <p class="about__text">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. 
+          Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, 
+          которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями? Слишком сложные или, 
+          наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. 
+          Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих 
+          лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. 
+          И сейчас эти лоты стали культовыми.</p>
+      </section>
+    </div>
+    <footer class="footer">
+      <address class="adress__footer">
+        <a href="+99995555555">+99995555555</a><br/>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br/>
+        <a>наб. Принсенграхт 263-265,<br/>Амстердам</a>
+      </adress>
+      <nav>
+        <ul class="menu__footer">
+          <li href="#home" class="menu-link_footer_no_active">главная</li>
+          <li href="#viev_lots" class="menu-link_footer">посмотреть лоты</li>
+          <li href="#auctoin" class="menu-link_footer">об аукционе</li>
+        </ul>
+      </nav>
+      <div class="social">
+        <a href="https://www.m.youtube.com">
+          <img src="./images/yt.svg" alt=" иконка ютуба">
+        </a>
+        <a href="http://www.vk.com/yourusername">
+          <img src="./images/vk.svg" alt="иконка вконтакте">
+        </a>
+        <a href="https://www.pinterest.com/yourusername">
+          <img src="./images/pinterest.svg" alt=" иконка пинтерест">
+        </a>
+      </div>
+    </footer>-->
+    <section class ="lots">
+      <h2 class="lot_title">лоты</h2>
+      <ul class="cards">
+        <li class="cars__item">
+          <article class="card">
+            <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
+            <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </body>
 </html>
